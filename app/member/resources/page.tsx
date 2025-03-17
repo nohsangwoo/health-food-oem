@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Download, File, FileText, Filter, Folder, Image, MoreHorizontal, Plus, Search, Upload } from "lucide-react"
@@ -27,10 +27,19 @@ export default function MemberResourcesPage() {
   const router = useRouter()
   const { isAuthenticated } = useAuthStore()
   const [searchQuery, setSearchQuery] = useState("")
+  const [isClient, setIsClient] = useState(false)
 
-  // 로그인 상태 확인
-  if (!isAuthenticated) {
-    router.push("/login?redirect=/member/resources")
+  useEffect(() => {
+    setIsClient(true)
+    
+    // 클라이언트 측에서만 인증 상태 확인
+    if (!isAuthenticated) {
+      router.push("/login?redirect=/member/resources")
+    }
+  }, [isAuthenticated, router])
+
+  // 서버 사이드 렌더링 중에는 아무것도 반환하지 않음
+  if (!isClient) {
     return null
   }
 

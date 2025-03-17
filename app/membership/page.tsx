@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import { Check } from "lucide-react"
+import { useState, useEffect } from "react"
 
 import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
@@ -11,6 +14,19 @@ import { MembershipBenefits } from "@/components/membership/membership-benefits"
 import { MembershipFeatures } from "@/components/membership/membership-features"
 
 export default function MembershipPage() {
+  const [isClient, setIsClient] = useState(false)
+  
+  useEffect(() => {
+    setIsClient(true)
+    
+    // 클라이언트 측에서만 실행해야 하는 코드가 있다면 여기에
+  }, [])
+
+  // 서버 사이드 렌더링 중에는 아무것도 반환하지 않음
+  if (!isClient) {
+    return null
+  }
+
   const membershipPlans = {
     monthly: [
       {
