@@ -38,17 +38,17 @@ export default function AboutPage() {
     {
       title: "연구개발 센터",
       description: "최첨단 장비를 갖춘 R&D 센터에서 혁신적인 제품을 개발합니다.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/products/10.webp?height=400&width=600",
     },
     {
       title: "생산 시설",
       description: "KGMP 인증을 받은 최신 생산 시설에서 엄격한 품질 관리 하에 제품을 생산합니다.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/products/11.webp?height=400&width=600",
     },
     {
       title: "품질 관리 연구소",
       description: "첨단 분석 장비를 갖춘 연구소에서 원료부터 완제품까지 철저한 품질 검사를 실시합니다.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/products/12.webp?height=400&width=600",
     },
   ]
 
@@ -101,7 +101,7 @@ export default function AboutPage() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=550&width=550"
+                  src="/products/9.webp?height=550&width=550"
                   width={550}
                   height={550}
                   alt="회사 건물 이미지"

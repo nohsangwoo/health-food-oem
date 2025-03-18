@@ -126,7 +126,7 @@ export default function ServicesPage() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=550&width=550"
+                  src="/products/13.webp?height=550&width=550"
                   width={550}
                   height={550}
                   alt="서비스 이미지"

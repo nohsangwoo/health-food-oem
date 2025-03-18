@@ -33,7 +33,7 @@ export function TestimonialsSection() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">고객 후기</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              건강기능식품 제조를 저희에�� 맡긴 브랜드들의 이야기를 들어보세요
+              건강기능식품 제조를 저희에 믿고 맡긴 브랜드들의 이야기를 들어보세요
             </p>
           </div>
         </div>
