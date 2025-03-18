@@ -38,7 +38,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       router.push("/login")
     } else if (isAuthPath && isAuthenticated) {
       // 이미 인증된 사용자가 로그인 페이지 등에 접근하려고 하면 대시보드로 리디렉션
-      router.push("/dashboard")
+      router.push("/admin/dashboard")
     }
   }, [isAuthenticated, pathname, router])
 

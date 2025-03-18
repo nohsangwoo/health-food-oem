@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex min-h-screen flex-col items-center justify-center` }>
         <ThemeProvider attribute="class" defaultTheme="light">
           <AuthProvider>{children}</AuthProvider>
         </ThemeProvider>
