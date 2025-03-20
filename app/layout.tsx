@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "건강식품 OEM",
   description: "건강기능식품 OEM 회사 웹사이트",
-    generator: 'v0.dev'
+    generator: 'ludgi'
 }
 
 export default function RootLayout({
